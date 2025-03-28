@@ -3,13 +3,11 @@ export default {
   meta: {
     type: 'suggestion',
     docs: {
-      description: 'Disallow usage of moment.js',
-      category: 'Best Practices',
-      recommended: true,
+      description: 'Disallow usage of moment.js in favor of more modern alternatives',
     },
     schema: [], // no options
     messages: {
-      noMoment: 'Use date-fns instead of moment',
+      noMoment: 'Use date-fns, luxon, or dayjs instead of moment',
     },
   },
 
@@ -19,7 +17,7 @@ export default {
         if (node.source.value === 'moment') {
           context.report({
             node,
-            messageId: 'noMoment',
+            message: 'Use date-fns, luxon, or dayjs instead of moment',
           });
         }
       },
