@@ -17,11 +17,11 @@ ruleTester.run('no-moment', rule, {
   invalid: [
     {
       code: "import moment from 'moment';",
-      errors: [{ message: 'Use date-fns, luxon, or dayjs instead of moment.js' }]
+      errors: [{ message: 'Use date-fns, luxon, or dayjs instead of moment' }]
     },
     {
       code: "import { moment } from 'moment';",
-      errors: [{ message: 'Use date-fns, luxon, or dayjs instead of moment.js' }]
+      errors: [{ message: 'Use date-fns, luxon, or dayjs instead of moment' }]
     }
   ]
 }); 
