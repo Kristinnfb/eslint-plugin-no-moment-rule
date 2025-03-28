@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kristinnfb/eslint-no-moment-rule.git"
+    "url": "https://github.com/Kristinnfb/eslint-no-moment-rule.git"
   },
   "keywords": [],
   "author": "",
