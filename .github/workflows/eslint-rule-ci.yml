@@ -31,3 +31,9 @@ jobs:
       - name: Publish to npm
         run: npm publish
         if: github.ref == 'refs/heads/main'
+
+      - name: Publish to GitHub Packages
+        run: npm publish --registry=https://npm.pkg.github.com/
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: github.ref == 'refs/heads/main'
