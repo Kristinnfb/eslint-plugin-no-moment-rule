@@ -1,7 +1,7 @@
 {
-  "name": "eslint-no-moment-rule",
+  "name": "eslint-plugin-no-moment-rule",
   "version": "1.0.0",
-  "description": "An ESLint rule to disallow the use of Moment.js",
+  "description": "A custom ESLint rule to disallow the use of Moment.js",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
@@ -9,10 +9,9 @@
   "keywords": [
     "eslint",
     "eslint-plugin",
-    "moment",
-    "eslint-rule"
+    "moment"
   ],
-  "author": "Kristinn F Birgisson",
+  "author": "YKristinn F Birgisson",
   "license": "MIT",
   "files": [
     "index.js",
@@ -20,12 +19,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/eslint-no-moment-rule.git"
+    "url": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/eslint-no-moment-rule/issues"
+    "url": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule/issues"
   },
-  "homepage": "https://github.com/yourusername/eslint-no-moment-rule#readme",
+  "homepage": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule#readme",
   "peerDependencies": {
     "eslint": "^8.0.0"
   }
