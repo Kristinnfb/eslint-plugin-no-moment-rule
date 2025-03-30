@@ -26,7 +26,9 @@ jobs:
         run: npm run lint
 
       - name: Publish to npm
-        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: github.ref == 'refs/heads/main'
+
+      
