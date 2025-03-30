@@ -11,7 +11,7 @@
     "eslint-plugin",
     "moment"
   ],
-  "author": "YKristinn F Birgisson",
+  "author": "Kristinn F. Birgisson",
   "license": "MIT",
   "files": [
     "index.js",
