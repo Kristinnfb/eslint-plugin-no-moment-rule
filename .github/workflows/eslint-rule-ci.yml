@@ -25,8 +25,9 @@ jobs:
       - name: Lint source files
         run: npm run lint
 
+      - name: Authenticate with npm
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Publish to npm
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: github.ref == 'refs/heads/main'
