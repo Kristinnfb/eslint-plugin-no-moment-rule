@@ -1,30 +1,32 @@
 {
   "name": "eslint-no-moment-rule",
   "version": "1.0.0",
-  "description": "",
+  "description": "An ESLint rule to disallow the use of Moment.js",
   "main": "index.js",
   "scripts": {
-    "test": "node --test",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix"
+    "test": "eslint ."
   },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "moment",
+    "eslint-rule"
+  ],
+  "author": "Kristinn F Birgisson",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kristinnfb/eslint-no-moment-rule.git"
+    "url": "https://github.com/yourusername/eslint-no-moment-rule.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
   "bugs": {
-    "url": "https://github.com/Kristinnfb/eslint-no-moment-rule/issues"
+    "url": "https://github.com/yourusername/eslint-no-moment-rule/issues"
   },
-  "homepage": "https://github.com/Kristinnfb/eslint-no-moment-rule#readme",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.28.0",
-    "@typescript-eslint/parser": "^8.28.0",
-    "eslint": "^8.57.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.31.0"
+  "homepage": "https://github.com/yourusername/eslint-no-moment-rule#readme",
+  "peerDependencies": {
+    "eslint": "^8.0.0"
   }
 }
