@@ -30,5 +30,3 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: github.ref == 'refs/heads/main'
-
-      
