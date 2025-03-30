@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-moment-rule",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A custom ESLint rule to disallow the use of Moment.js",
   "main": "index.js",
   "scripts": {
