@@ -4,7 +4,7 @@
   "description": "An ESLint rule to disallow the use of Moment.js",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ."
+    "lint": "eslint ."
   },
   "keywords": [
     "eslint",
