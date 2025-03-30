@@ -27,6 +27,9 @@ jobs:
 
       - name: Authenticate with npm
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
 
       - name: Publish to npm
         run: npm publish --registry=https://npm.pkg.github.com/
