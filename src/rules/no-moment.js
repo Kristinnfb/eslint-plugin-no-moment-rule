@@ -1,14 +1,11 @@
-/** @type {import('eslint').Rule.RuleModule} */
 export default {
   meta: {
-    type: 'suggestion',
+    type: 'problem',
     docs: {
       description: 'Disallow usage of moment.js in favor of more modern alternatives',
-    },
-    schema: [], // no options
-    messages: {
-      noMoment: 'Use date-fns, luxon, or dayjs instead of moment',
-    },
+      category: 'Best Practices',
+      recommended: 'error',
+    }
   },
 
   create(context) {
@@ -21,6 +18,20 @@ export default {
           });
         }
       },
-    };
+      CallExpression(node) {
+        if (
+          node.callee.name === 'require' &&
+          node.callee.type === 'Identifier' &&
+          node.arguments[0] &&
+          node.arguments[0].type === 'Literal' &&
+          node.arguments[0].value === 'moment'
+        ) {
+          context.report({
+            node,
+            message: 'Use date-fns, luxon, or dayjs instead of moment',
+          });
+        }
+      }     
+    }
   },
 }; 

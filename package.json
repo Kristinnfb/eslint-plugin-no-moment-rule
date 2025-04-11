@@ -1,6 +1,6 @@
 {
-  "name": "@Kristinnfb/eslint-plugin-no-moment-rule",
-  "version": "1.0.8",
+  "name": "@kristinnfb/eslint-plugin-no-moment-rule",
+  "version": "1.0.1",
   "description": "A custom ESLint rule to disallow the use of Moment.js",
   "main": "index.js",
   "scripts": {
@@ -9,23 +9,29 @@
   "keywords": [
     "eslint",
     "eslint-plugin",
-    "moment"
+    "moment",
+    "date-fns",
+    "luxon",
+    "dayjs"
   ],
   "author": "Kristinn F. Birgisson",
-  "license": "MIT",
-  "files": [
-    "index.js",
-    "lib/"
-  ],
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kristinnfb/eslint-plugin-no-moment-rule.git"
   },
-  "bugs": {
-    "url": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule/issues"
-  },
-  "homepage": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule#readme",
-  "peerDependencies": {
-    "eslint": "^8.0.0"
-  }
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+    },
+  
+    "peerDependencies": {
+      "eslint": ">=8.0.0"
+    },
+    "devDependencies": {
+      "@eslint/js": "^8.57.1",
+      "eslint": "^8.57.1",
+      "eslint-plugin-react": "^7.33.2",
+      "globals": "^13.24.0",
+      "typescript-eslint": "^7.0.0"
+    }
 }
