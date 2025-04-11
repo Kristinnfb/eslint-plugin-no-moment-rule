@@ -4,7 +4,9 @@
   "description": "A custom ESLint rule to disallow the use of Moment.js",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "tsc"
   },
   "keywords": [
     "eslint",
@@ -22,16 +24,17 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
-    },
-  
-    "peerDependencies": {
-      "eslint": ">=8.0.0"
-    },
-    "devDependencies": {
-      "@eslint/js": "^8.57.1",
-      "eslint": "^8.57.1",
-      "eslint-plugin-react": "^7.33.2",
-      "globals": "^13.24.0",
-      "typescript-eslint": "^7.0.0"
-    }
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.57.1",
+    "@types/node": "^22.14.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.33.2",
+    "globals": "^13.24.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.0.0"
+  }
 }
