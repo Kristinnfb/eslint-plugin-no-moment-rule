@@ -2,10 +2,10 @@
   "name": "@kristinnfb/eslint-plugin-no-moment",
   "version": "1.0.1",
   "description": "ESLint plugin to forbid the use of moment.js",
-  "main": "index.js",
+  "main": "src/index.js",
   "files": [
     "src/rules",
-    "index.js"
+    "src/index.js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,9 +27,8 @@
     "url": "git+https://github.com/Kristinnfb/eslint-plugin-no-moment-rule.git"
   },
   "publishConfig": {
-  "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/"
   },
-
   "peerDependencies": {
     "eslint": ">=8.0.0"
   },
