@@ -23,7 +23,6 @@ export default {
           node.callee.name === 'require' &&
           node.callee.type === 'Identifier' &&
           node.arguments[0] &&
-          node.arguments[0].type === 'Literal' &&
           node.arguments[0].value === 'moment'
         ) {
           context.report({
@@ -31,7 +30,7 @@ export default {
             message: 'Use date-fns, luxon, or dayjs instead of moment',
           });
         }
-      }     
-    }
+      },     
+    };
   },
 }; 

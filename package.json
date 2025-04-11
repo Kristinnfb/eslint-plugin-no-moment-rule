@@ -1,12 +1,18 @@
 {
-  "name": "@kristinnfb/eslint-plugin-no-moment-rule",
+  "name": "eslint-plugin-no-moment",
   "version": "1.0.1",
   "description": "A custom ESLint rule to disallow the use of Moment.js",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "keywords": [
     "eslint",
@@ -22,6 +28,10 @@
     "type": "git",
     "url": "git+https://github.com/Kristinnfb/eslint-plugin-no-moment-rule.git"
   },
+  "bugs": {
+    "url": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule/issues"
+  },
+  "homepage": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -30,6 +40,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^8.57.1",
+    "@types/eslint": "^8.56.6",
     "@types/node": "^22.14.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.33.2",
