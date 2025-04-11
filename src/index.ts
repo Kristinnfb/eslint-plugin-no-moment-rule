@@ -1,8 +1,6 @@
-const noMomentRule = require('./rules/no-moment');
-
 module.exports = {
   rules: {
-    'no-moment': noMomentRule
+    'no-moment': require('./rules/no-moment')
   },
   configs: {
     recommended: {
