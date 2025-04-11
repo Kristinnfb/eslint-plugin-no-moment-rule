@@ -4,7 +4,7 @@
   "description": "ESLint plugin to forbid the use of moment.js",
   "main": "src/index.js",
   "files": [
-    "src/rules",
+    "src/rules/no-moment.js",
     "src/index.js"
   ],
   "scripts": {
