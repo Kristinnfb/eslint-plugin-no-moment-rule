@@ -1,15 +1,11 @@
 module.exports = {
   meta: {
-    type: 'suggestion',
+    type: 'problem',
     docs: {
-      description: 'Disallow the use of Moment.js',
+      description: 'Disallow usage of moment.js in favor of more modern alternatives',
       category: 'Best Practices',
       recommended: true,
-    },
-    schema: [], // no options
-    messages: {
-      noMoment: 'Do not use Moment.js. Consider using date-fns, Luxon, or Day.js instead.',
-    },
+    }
   },
 
   create(context)
@@ -21,23 +17,22 @@ module.exports = {
         {
           context.report({
             node,
-            messageId: 'noMoment',
+            message: 'Use date-fns, luxon, or dayjs instead of moment',
           });
         }
       },
       CallExpression(node)
       {
         if (
-          node.callee.type === 'Identifier' &&
           node.callee.name === 'require' &&
-          node.arguments.length > 0 &&
-          node.arguments[0].type === 'Literal' &&
+          node.callee.type === 'Identifier' &&
+          node.arguments[0] &&
           node.arguments[0].value === 'moment'
         )
         {
           context.report({
             node,
-            messageId: 'noMoment',
+            message: 'Use date-fns, luxon, or dayjs instead of moment',
           });
         }
       },
