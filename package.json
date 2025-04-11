@@ -1,23 +1,21 @@
 {
-  "name": "eslint-plugin-no-moment",
+  "name": "@kristinnfb/eslint-plugin-no-moment",
   "version": "1.0.1",
-  "description": "A custom ESLint rule to disallow the use of Moment.js",
-  "main": "lib/index.js",
+  "description": "ESLint plugin to forbid the use of moment.js",
+  "main": "index.js",
   "files": [
-    "lib",
-    "package.json",
-    "README.md"
+    "rules",
+    "index.js"
   ],
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "build": "tsc",
-    "prepare": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build step required\""
   },
   "keywords": [
     "eslint",
-    "eslint-plugin",
+    "eslintplugin",
     "moment",
+    "date",
     "date-fns",
     "luxon",
     "dayjs"
@@ -28,24 +26,18 @@
     "type": "git",
     "url": "git+https://github.com/Kristinnfb/eslint-plugin-no-moment-rule.git"
   },
-  "bugs": {
-    "url": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule/issues"
-  },
-  "homepage": "https://github.com/Kristinnfb/eslint-plugin-no-moment-rule#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "registry": "https://registry.npmjs.org/"
   },
+
   "peerDependencies": {
     "eslint": ">=8.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^8.57.1",
-    "@types/eslint": "^8.56.6",
-    "@types/node": "^22.14.0",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.33.2",
     "globals": "^13.24.0",
-    "typescript": "^5.3.3",
     "typescript-eslint": "^7.0.0"
   }
 }
